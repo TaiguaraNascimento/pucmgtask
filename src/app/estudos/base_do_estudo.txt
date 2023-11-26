@@ -1,0 +1,16 @@
+
+
+CRIANDO APP NEXT
+
+
+npx create-next-app NOME
+
+
+
+
+
+
+
+pontos de estudo
+https://www.youtube.com/watch?v=L1osqF17iDM
+Server Components
