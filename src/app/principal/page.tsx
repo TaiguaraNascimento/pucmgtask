@@ -1,3 +1,7 @@
 export default function Principal() {
-  return <>1</>;
+  return (
+    <>
+      <h1>Conteudo principal</h1>
+    </>
+  );
 }

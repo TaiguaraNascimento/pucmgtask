@@ -1,4 +1,10 @@
-import "../estilos/global.css";
+import { Metadata } from "next";
+
+import "../app/global.css";
+
+export const metadata: Metadata = {
+  title: "Grant Thornton Brasil - GMS",
+};
 
 export default function RootLayout({
   children,
@@ -7,9 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <head>
-        <title>Grant Thornton Brasil</title>
-      </head>
+      <head></head>
       <body>{children}</body>
     </html>
   );
