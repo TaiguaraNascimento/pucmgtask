@@ -1,7 +1,4 @@
-export const metadata = {
-  title: "Grant Thornton",
-  description: "Exemplo para PUCMG",
-};
+import "../estilos/global.css";
 
 export default function RootLayout({
   children,
@@ -9,7 +6,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
+      <head>
+        <title>Grant Thornton Brasil</title>
+      </head>
       <body>{children}</body>
     </html>
   );
