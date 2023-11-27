@@ -1,0 +1,15 @@
+.Superior {
+  background-color: var(--gtColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Superior .LoggedUser {
+  padding: 15px;
+}
+.Superior .UserPic {
+  border-radius: 50%;
+}
+.Superior .Logotipo {
+  padding: 15px;
+}

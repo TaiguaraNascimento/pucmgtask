@@ -1,0 +1,31 @@
+.MenuItem {
+  display: flex;
+  align-items: center;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  @mixin hover {
+    background-color: var(--menuColorHover);
+  }
+
+  :hover {
+    @include hover;
+  }
+
+  .LinkAtivo {
+    @include hover;
+  }
+
+  .MenuLink {
+    padding: 15px;
+    width: 100%;
+  }
+}
+
+.HeaderMenu {
+  font-size: 14pt;
+  font-weight: bold;
+  border-bottom: 2px solid;
+  margin-bottom: 10px;
+}
