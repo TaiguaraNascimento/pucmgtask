@@ -1,6 +1,6 @@
 import styles from "./superior.module.css";
 
-import Logotipo from "../../visual/logotipo";
+import Logotipo from "../../visual/logotipo/logotipo";
 import LoggedUser from "./loggeduser/loggeduser";
 
 export default function Superior() {

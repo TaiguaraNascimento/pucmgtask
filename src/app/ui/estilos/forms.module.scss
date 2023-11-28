@@ -1,0 +1,42 @@
+.Forms {
+  font-family: var(--fontName);
+  display: flex;
+  flex-direction: column;
+
+  .Row {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-flow: nowrap;
+    justify-content: flex-start;
+  }
+
+  .Campo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .InputBox {
+      font-family: var(--fontName);
+      font-size: 12pt;
+      border: 1px;
+      width: 300px;
+      background-color: #f5f5f5;
+      padding: 5pt;
+    }
+  }
+}
+
+.Button {
+  font-size: 14px;
+  color: white;
+  border: 0px;
+  background-color: var(--gtColor);
+  padding: 10px;
+}

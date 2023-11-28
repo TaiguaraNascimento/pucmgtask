@@ -21,19 +21,44 @@
   font-size: 25px;
   font-style: italic;
   margin-bottom: 25px;
+  color: var(--textColor);
 }
 
-.TabelaDeDados {
-  border: 1px solid;
-  font-size: 10pt;
-  width: 100%;
+.RowContent {
+  display: flex;
+  flex-direction: row;
 
-  td {
-    padding: 3px;
+  .TabelaDeDados {
+    font-size: 14pt;
+    width: 100%;
+    border-collapse: collapse;
+
+    tbody tr:nth-child(even) {
+      background-color: #dadada;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    tbody tr:hover {
+      background-color: var(--gtColor);
+      color: white;
+    }
+
+    td {
+      padding: 5px;
+    }
+
+    thead tr {
+      background-color: var(--gtColor);
+      color: white;
+    }
   }
 
-  thead tr {
+  .LinkBotao {
     background-color: var(--gtColor);
     color: white;
+    padding: 5px;
   }
 }

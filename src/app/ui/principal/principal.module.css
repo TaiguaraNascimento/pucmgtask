@@ -21,17 +21,41 @@
   font-size: 25px;
   font-style: italic;
   margin-bottom: 25px;
+  color: var(--textColor);
 }
 
-.TabelaDeDados {
-  border: 1px solid;
-  font-size: 10pt;
+.RowContent {
+  display: flex;
+  flex-direction: row;
+}
+.RowContent .TabelaDeDados {
+  font-size: 14pt;
   width: 100%;
+  border-collapse: collapse;
 }
-.TabelaDeDados td {
-  padding: 3px;
+.RowContent .TabelaDeDados tbody tr:nth-child(even) {
+  background-color: #dadada;
 }
-.TabelaDeDados thead tr {
+.RowContent .TabelaDeDados tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.RowContent .TabelaDeDados tbody tr:hover {
   background-color: var(--gtColor);
   color: white;
+}
+.RowContent .TabelaDeDados td {
+  padding: 5px;
+}
+.RowContent .TabelaDeDados thead tr {
+  background-color: var(--gtColor);
+  color: white;
+}
+.RowContent .LinkBotao {
+  background-color: var(--gtColor);
+  color: white;
+  padding: 5px;
+}
+
+.Icons {
+  color: red;
 }

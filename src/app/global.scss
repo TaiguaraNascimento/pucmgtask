@@ -1,7 +1,10 @@
 :root {
-  --bg: yellow;
+  --bg: white;
   --bgText: blue;
 
+  --textColor: #515151;
+
+  --fontName: "Nunito";
   --menuColor: #f3f3f3;
   --menuColorHover: #d4cdcd;
   --gtColor: #4e2d7f;
@@ -18,7 +21,7 @@
 
 body {
   background-color: var(--bg);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--fontName);
 }
 
 a {

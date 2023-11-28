@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import logotipo from "./../../../../public/imagens/logotipo.png";
+import logotipo from "../../../../../public/imagens/logotipo.png";
 
 export default function Logotipo() {
   const y = 40;

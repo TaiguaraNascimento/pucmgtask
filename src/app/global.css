@@ -1,7 +1,9 @@
 @charset "UTF-8";
 :root {
-  --bg: yellow;
+  --bg: white;
   --bgText: blue;
+  --textColor: #515151;
+  --fontName: "Nunito";
   --menuColor: #f3f3f3;
   --menuColorHover: #d4cdcd;
   --gtColor: #4e2d7f;
@@ -17,7 +19,7 @@
 /* Esse seletor universal é usado para selecionar todos os membros do CSS onde for posto */
 body {
   background-color: var(--bg);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--fontName);
 }
 
 a {
