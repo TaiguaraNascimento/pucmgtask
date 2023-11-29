@@ -1,5 +1,5 @@
-import Contribuintes from "./models";
-import connectToDB from "../utils/utils";
+import Contribuintes from "../models/models.contribuintes";
+import connectToDB from "../utils";
 
 export const fetchContribuintes = async () => {
   try {

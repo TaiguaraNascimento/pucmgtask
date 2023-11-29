@@ -29,7 +29,7 @@
   flex-direction: row;
 }
 .RowContent .TabelaDeDados {
-  font-size: 14pt;
+  font-size: 11pt;
   width: 100%;
   border-collapse: collapse;
 }
@@ -54,8 +54,4 @@
   background-color: var(--gtColor);
   color: white;
   padding: 5px;
-}
-
-.Icons {
-  color: red;
 }

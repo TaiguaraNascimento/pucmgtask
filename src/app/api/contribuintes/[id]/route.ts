@@ -1,6 +1,6 @@
-import connectMongoDB from "@/app/api/utils/utils";
+import connectMongoDB from "@/app/api/conexao/utils";
 
-import Contribuintes from "../../conexao/models";
+import Contribuintes from "../../conexao/models/models.contribuintes";
 
 import { NextResponse } from "next/server";
 

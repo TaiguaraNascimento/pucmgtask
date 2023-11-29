@@ -43,41 +43,41 @@ export default function Cadastrar() {
       !alteracao_de_endereco
     ) {
       alert("Os campos são obrigatórios");
-    }
+    } else {
+      try {
+        //const res = await fetch("http://localhost:3000/api/contribuintes", {
 
-    try {
-      //const res = await fetch("http://localhost:3000/api/contribuintes", {
+        const res = await fetch("/api/contribuintes", {
+          method: "POST",
+          headers: {
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify({
+            nome,
+            cpf,
+            data_de_nascimento,
+            email,
+            celular,
+            endereco,
+            endereco_num,
+            endereco_cep,
+            endereco_bairro,
+            endereco_cidade,
+            endereco_estado,
+            endereco_pais,
+            titulo_de_eleitor,
+            alteracao_de_endereco,
+          }),
+        });
 
-      const res = await fetch("/api/contribuintes", {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify({
-          nome,
-          cpf,
-          data_de_nascimento,
-          email,
-          celular,
-          endereco,
-          endereco_num,
-          endereco_cep,
-          endereco_bairro,
-          endereco_cidade,
-          endereco_estado,
-          endereco_pais,
-          titulo_de_eleitor,
-          alteracao_de_endereco,
-        }),
-      });
-
-      if (res.ok) {
-        router.push("/principal/dadosirpf");
-      } else {
-        throw new Error("O cadastro do usuário não funcionou");
+        if (res.ok) {
+          router.push("/principal/dadosirpf");
+        } else {
+          throw new Error("O cadastro do usuário não funcionou");
+        }
+      } catch (error) {
+        console.log(error);
       }
-    } catch (error) {
-      console.log(error);
     }
   };
 

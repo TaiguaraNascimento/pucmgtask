@@ -1,5 +1,5 @@
 import LinkBotao from "@/app/ui/visual/LinkBotao/linkbotao";
-import { fetchContribuintes } from "../../api/conexao/data";
+import { fetchContribuintes } from "../../api/conexao/fetches/fetch.contribuintes";
 import styles from "../../ui/principal/principal.module.css";
 import Titulo from "@/app/ui/principal/titulos/titulos";
 import RemoveBtn from "./deletar/deletar";
