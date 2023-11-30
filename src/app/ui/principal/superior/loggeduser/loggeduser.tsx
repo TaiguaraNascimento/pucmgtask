@@ -9,8 +9,8 @@ export default function LoggedUser() {
         src={NoUser}
         className={styles.UserPic}
         alt="Username"
-        height={40}
-        width={40}
+        height={25}
+        width={25}
       />
     </div>
   );

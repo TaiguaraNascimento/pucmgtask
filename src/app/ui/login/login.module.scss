@@ -1,0 +1,55 @@
+.LoginContainer {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginQuadro {
+  width: 500px;
+  height: 600px;
+}
+
+.Informacoes {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0;
+  color: var(--gtColor);
+
+  input {
+    width: 70%;
+    height: 50px;
+    border: 1px solid var(--gtColor);
+    border-radius: 5px;
+    font-size: 23px;
+    color: var(--gtColor);
+  }
+
+  button {
+    width: 200px;
+    height: 30px;
+    border: 1px solid var(--gtColor);
+    border-radius: 5px;
+
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: var(--gtColor);
+    color: white;
+  }
+}
+
+.Row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}

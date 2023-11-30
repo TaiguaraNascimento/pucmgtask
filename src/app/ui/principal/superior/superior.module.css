@@ -1,15 +1,40 @@
 .Superior {
   background-color: var(--gtColor);
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  height: 60px;
 }
 .Superior .LoggedUser {
-  padding: 15px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 .Superior .UserPic {
   border-radius: 50%;
 }
 .Superior .Logotipo {
   padding: 15px;
+}
+.Superior .Menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Superior .Menu ul {
+  display: flex;
+  font-size: 18px;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+.Superior .Menu ul li {
+  padding: 15px;
+  cursor: pointer;
+}
+.Superior .Menu ul li:hover {
+  color: yellow;
+  text-decoration: underline;
 }

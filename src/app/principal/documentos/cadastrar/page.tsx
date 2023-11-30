@@ -1,11 +1,11 @@
 "use client";
 
+import { useState } from "react";
+
 import styles from "@/app/ui/estilos/forms.module.css";
 import Titulo from "@/app/ui/principal/titulos/titulos";
 
-import { useState } from "react";
 import { useRouter } from "next/navigation";
-import ComboboxContribuintes from "@/app/ui/principal/fields/ComboboxContribuintes";
 
 export default function Documentos() {
   const [data_de_solicitacao, setdata_de_solicitacao] = useState("");
@@ -26,20 +26,17 @@ export default function Documentos() {
     e.preventDefault();
 
     if (
-      !nome ||
-      !cpf ||
-      !data_de_nascimento ||
-      !email ||
-      !celular ||
-      !endereco ||
-      !endereco_num ||
-      !endereco_cep ||
-      !endereco_bairro ||
-      !endereco_cidade ||
-      !endereco_estado ||
-      !endereco_pais ||
-      !titulo_de_eleitor ||
-      !alteracao_de_endereco
+      !data_de_solicitacao ||
+      !titular ||
+      !area ||
+      !descricao ||
+      !empresa ||
+      !deadling ||
+      !prioridade ||
+      !data_da_entrega ||
+      !classificacao ||
+      !status ||
+      !comentarios
     ) {
       alert("Os campos são obrigatórios");
     } else {
@@ -95,10 +92,12 @@ export default function Documentos() {
             <div className={styles.Campo}>
               <label>Titular</label>
 
-              <ComboboxContribuintes
+              <input
+                className={styles.InputBox}
                 onChange={(e) => settitular(e.target.value)}
-                classname={styles.InputBox}
-                variavel={titular}
+                value={titular}
+                type="text"
+                placeholder="titular"
               />
             </div>
           </div>

@@ -1,8 +1,9 @@
 .MenuItem {
   display: flex;
   align-items: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  border-bottom: 1px solid #bebebe;
 }
 .MenuItem :hover {
   background-color: var(--menuColorHover);
@@ -20,4 +21,9 @@
   font-weight: bold;
   border-bottom: 2px solid;
   margin-bottom: 10px;
+}
+
+.NaoImplementado {
+  font-size: 13px;
+  color: #acacac;
 }

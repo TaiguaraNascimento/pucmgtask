@@ -13,14 +13,7 @@ export default function Layout({ children }) {
           </div>
         </div>
 
-        <div className={styles.ContentRow}>
-          <div className={styles.Menu}>
-            <Sidebar />
-          </div>
-          <div className={styles.Content}>
-            <div className={styles.Stage}>{children}</div>
-          </div>
-        </div>
+        <div className={styles.ContentRow}>{children}</div>
       </div>
     </>
   );

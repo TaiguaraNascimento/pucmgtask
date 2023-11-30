@@ -33,7 +33,7 @@ export default async function Documentos() {
           <tbody>
             {documentos.map((documento) => (
               <tr key={documento.id}>
-                <td>{documento.data_de_solicitacao}</td>
+                <td>{documento.data_da_solicitacao}</td>
                 <td>{documento.titular}</td>
                 <td>{documento.area}</td>
                 <td>{documento.descricao}</td>
@@ -54,8 +54,8 @@ export default async function Documentos() {
 
       <div className={styles.RowContent}>
         <LinkBotao
-          href="./dadosirpf/cadastrar"
-          text="Cadastrar Contribuintes"
+          href="./documentos/cadastrar"
+          text="Nova solicitação de documentos"
         />
       </div>
     </div>

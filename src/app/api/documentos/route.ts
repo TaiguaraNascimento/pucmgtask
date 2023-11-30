@@ -7,7 +7,6 @@ import { NextResponse } from "next/server";
 
 export async function GET(request) {
   try {
-    console.log("xxxxxxxxxxxx");
     connectMongoDB();
 
     const documentos = await Documento.find();
@@ -19,41 +18,37 @@ export async function GET(request) {
 }
 
 export async function POST(request) {
-  try {
-    const {
-      data_da_solicitacao,
-      titular,
-      area,
-      descricao,
-      empresa,
-      deadling,
-      prioridade,
-      data_da_entrega,
-      classificacao,
-      status,
-      comentarios,
-    } = await request.json();
+  const {
+    data_da_solicitacao,
+    titular,
+    area,
+    descricao,
+    empresa,
+    deadling,
+    prioridade,
+    data_da_entrega,
+    classificacao,
+    status,
+    comentarios,
+  } = await request.json();
 
-    await connectMongoDB();
+  await connectMongoDB();
 
-    await Documento.create({
-      data_da_solicitacao,
-      titular,
-      area,
-      descricao,
-      empresa,
-      deadling,
-      prioridade,
-      data_da_entrega,
-      classificacao,
-      status,
-      comentarios,
-    });
-    return NextResponse.json(
-      { message: "Documento criado com suscesso" },
-      { status: 200 }
-    );
-  } catch (error) {
-    console.log(error);
-  }
+  await Documento.create({
+    data_da_solicitacao,
+    titular,
+    area,
+    descricao,
+    empresa,
+    deadling,
+    prioridade,
+    data_da_entrega,
+    classificacao,
+    status,
+    comentarios,
+  });
+  return NextResponse.json(
+    { message: "Documento criado com suscesso" },
+    { status: 200 }
+  );
 }

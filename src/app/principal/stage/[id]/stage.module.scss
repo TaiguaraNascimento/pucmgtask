@@ -1,0 +1,39 @@
+.Stage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  @mixin quadro {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid var(--gtColor);
+    border-radius: 8px;
+  }
+
+  .MenuLateral {
+    @include quadro;
+    width: 300px;
+
+    .MenuItem {
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        text-decoration: underline;
+        background-color: #fdffe8;
+      }
+
+      .imagem {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .Content {
+    @include quadro();
+    width: 900px;
+  }
+}

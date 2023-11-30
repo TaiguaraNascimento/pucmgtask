@@ -1,15 +1,17 @@
+.ContentRow {
+  display: flex;
+  flex-direction: row;
+}
 .Content {
-  flex: 4;
+  flex: 7;
 }
 
 .Menu {
   flex: 1;
   background-color: var(--menuColor);
   padding: 10px;
-}
-
-.Container {
-  display: flex;
+  width: 150px;
+  height: calc(100vh - 60px);
 }
 
 .Stage {
@@ -54,4 +56,10 @@
   background-color: var(--gtColor);
   color: white;
   padding: 5px;
+}
+
+.OpenStage :hover {
+  font-weight: bold;
+  color: yellow;
+  text-decoration: underline;
 }

@@ -1,0 +1,71 @@
+.Whole section {
+  max-width: 57%;
+  margin: auto;
+  text-align: center;
+}
+.Whole .wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.Whole .wrapper .video_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.Whole .wrapper .video_wrap video {
+  min-width: 100%;
+  min-height: 100%;
+}
+.Whole .wrapper .overlay {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  background-color: var(--gtColor);
+}
+.Whole .wrapper .superior {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.Whole .wrapper .landing_text {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Whole .wrapper .landing_text .Aviso {
+  width: 500px;
+  height: 350px;
+  padding: 50px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.Whole .wrapper .landing_text .Aviso h1,
+.Whole .wrapper .landing_text .Aviso h2 {
+  padding-bottom: 10px;
+}
+.Whole .wrapper .landing_text .Aviso .btn {
+  background-color: var(--gtColor);
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 30px;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+}

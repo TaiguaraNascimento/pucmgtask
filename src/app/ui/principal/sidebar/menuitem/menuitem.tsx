@@ -18,6 +18,12 @@ export default function MenuItem(props) {
         href={link_de_acesso}
       >
         {props.item}
+
+        {props.na === true ? (
+          <div className={styles.NaoImplementado}>(Não Implementado)</div>
+        ) : (
+          <></>
+        )}
       </Link>
     </div>
   );

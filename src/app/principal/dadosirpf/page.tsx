@@ -5,6 +5,7 @@ import Titulo from "@/app/ui/principal/titulos/titulos";
 import RemoveBtn from "./deletar/deletar";
 import Link from "next/link";
 import { HiPencilAlt } from "react-icons/hi";
+import OpenStage from "@/app/ui/visual/openstage/OpenStage";
 
 export default async function DadosIRPF() {
   const contribuintes = await fetchContribuintes();
@@ -31,7 +32,12 @@ export default async function DadosIRPF() {
           <tbody>
             {contribuintes.map((contribuinte) => (
               <tr key={contribuinte.id}>
-                <td>{contribuinte.nome}</td>
+                <td>
+                  <OpenStage
+                    href={`/principal/dadosirpf/${contribuinte.id}`}
+                    contribuinte={contribuinte.nome}
+                  />
+                </td>
                 <td>{contribuinte.cpf}</td>
                 <td>{contribuinte.data_de_nascimento}</td>
                 <td>{contribuinte.email}</td>

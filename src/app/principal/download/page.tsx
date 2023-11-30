@@ -1,37 +1,18 @@
-"use client";
+import Titulo from "@/app/ui/principal/titulos/titulos";
+import Image from "next/image";
+import logopuc from "../../../../public/imagens/logotipo_puc.jpg";
 
-import { useState } from "react";
-
-const FetchComponent = (id) => {
-  const [error, setError] = useState(null);
-
-  const fetchData = async () => {
-    try {
-      const response = await fetch(
-        `http://localhost:3000/api/contribuintes/${id}`
-      ); // Substitua pela sua URL de teste
-      const result = await response.json();
-      setData(result);
-    } catch (err) {
-      setError(err);
-    }
-  };
-
+export default function Download() {
   return (
-    <div>
-      <h1>Teste de Fetch Component</h1>
-      <button onClick={fetchData("6563dbcd9af916b95794a8fd")}>
-        Buscar Dados
-      </button>
-      {error && <p>Ocorreu um erro: {error.message}</p>}
-      {data && (
-        <div>
-          <h2>Dados Recebidos:</h2>
-          <pre>{JSON.stringify(data, null, 2)}</pre>
-        </div>
-      )}
-    </div>
-  );
-};
+    <>
+      <Titulo texto="Download dos papéis de trabalho" />
+      <p>
+        {" "}
+        Essa função não será implementada para este projeto de conclusão de
+        curso.
+      </p>
 
-export default FetchComponent;
+      <Image src={logopuc} alt="Logotipo da PUC-Mg" height={300} width={340} />
+    </>
+  );
+}

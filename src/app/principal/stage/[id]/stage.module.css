@@ -1,0 +1,33 @@
+.Stage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.Stage .MenuLateral {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid var(--gtColor);
+  border-radius: 8px;
+  width: 300px;
+}
+.Stage .MenuLateral .MenuItem {
+  display: flex;
+  align-items: center;
+}
+.Stage .MenuLateral .MenuItem:hover {
+  text-decoration: underline;
+  background-color: #fdffe8;
+}
+.Stage .MenuLateral .MenuItem .imagem {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.Stage .Content {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid var(--gtColor);
+  border-radius: 8px;
+  width: 900px;
+}
