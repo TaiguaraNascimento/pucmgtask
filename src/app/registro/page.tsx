@@ -43,10 +43,10 @@ export default function Registro() {
         setError("");
         router.push("/login");
       }
-    } catch (error) {}
-
-    setError("Erro ao registrar usuário");
-    console.log(email, senha);
+    } catch (error) {
+      setError("Erro ao registrar usuário");
+      console.log(email, senha);
+    }
   };
 
   return (

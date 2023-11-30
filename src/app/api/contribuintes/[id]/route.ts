@@ -1,4 +1,4 @@
-import connectMongoDB from "@/app/api/conexao/utils";
+import connectMongoDB from "@/app/api/conexao/utils/utils";
 
 import Contribuintes from "../../conexao/models/models.contribuintes";
 

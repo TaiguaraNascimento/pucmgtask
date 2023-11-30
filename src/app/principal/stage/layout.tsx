@@ -3,8 +3,7 @@
 import { usePathname } from "next/navigation";
 
 import Titulo from "@/app/ui/principal/titulos/titulos";
-import Content from "../components/content";
-import MenuLateral from "../components/MenuLateral";
+import MenuLateral from "./components/MenuLateral";
 import style from "../components/stage.module.css";
 
 function ObterIDPelaURL() {
@@ -16,7 +15,7 @@ function ObterIDPelaURL() {
   return slices[quantidade_de_slices - 1];
 }
 
-export default function Stage({ params }: { params: { slug: string } }) {
+export default function StageLayout(props) {
   const id = ObterIDPelaURL();
 
   return (
@@ -30,9 +29,7 @@ export default function Stage({ params }: { params: { slug: string } }) {
           <MenuLateral />
         </div>
 
-        <div>
-          <Content id={id} />
-        </div>
+        <div>{children}</div>
       </div>
     </>
   );

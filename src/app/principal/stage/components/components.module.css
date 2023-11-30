@@ -12,8 +12,11 @@
   width: 300px;
 }
 .Stage .MenuLateral .MenuItem {
+  --space: 15px;
   display: flex;
   align-items: center;
+  margin-top: var(--space);
+  margin-bottom: var(--space);
 }
 .Stage .MenuLateral .MenuItem:hover {
   text-decoration: underline;
@@ -30,4 +33,14 @@
   border: 1px solid var(--gtColor);
   border-radius: 8px;
   width: 900px;
+}
+
+.anotacao {
+  font-size: 10px;
+  background-color: #fee0f8;
+  padding: 2px;
+  display: inline-block;
+  font-weight: bold;
+  color: #d81651;
+  border-radius: 5px;
 }

@@ -27,7 +27,7 @@
 
 .Titulo {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 35px;
   font-style: italic;
   margin-bottom: 25px;
   color: var(--textColor);
@@ -77,5 +77,42 @@
     font-weight: bold;
     color: yellow;
     text-decoration: underline;
+  }
+}
+
+.tabelabasica {
+  border: 1px solid black;
+  margin-top: 20px;
+  width: 600px;
+
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  thead tr {
+    background-color: #dadada;
+  }
+}
+
+.conteudorow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  p,
+  h3 {
+    margin-top: 15px;
+  }
+
+  .espaco1 {
+    margin-right: 50px;
+  }
+  .espaco2 {
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
   }
 }

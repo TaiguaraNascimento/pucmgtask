@@ -1,7 +1,9 @@
-import MenuItem from "./MenuItem";
-import style from "./stage.module.css";
+"use client";
 
-export default function MenuLateral() {
+import MenuItem from "./MenuItem";
+import style from "./components.module.css";
+
+export default function MenuLateral(prpos) {
   return (
     <div className={style.MenuLateral}>
       <MenuItem titulo="Dados Pessoais" link="/principal/stage/1" imagem={1} />
@@ -20,17 +22,25 @@ export default function MenuLateral() {
         titulo="Pagamentos efetuados"
         link="/principal/stage/1"
         imagem={5}
+        anotacao={true}
       />
       <MenuItem
         titulo="Doações efetuadas"
         link="/principal/stage/1"
         imagem={6}
+        anotacao={true}
       />
-      <MenuItem titulo="Bens e direitos" link="/principal/stage/1" imagem={2} />
+      <MenuItem
+        anotacao={true}
+        titulo="Bens e direitos"
+        link="/principal/stage/1"
+        imagem={2}
+      />
       <MenuItem
         titulo="Dívidas e onus reais"
         link="/principal/stage/1"
         imagem={7}
+        anotacao={true}
       />
     </div>
   );

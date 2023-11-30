@@ -33,7 +33,7 @@ export default function Home() {
                 do IRPF de pessoas com patrimônio complexo e relevante.
               </p>
               <button
-                onClick={() => router.push("/principal")}
+                onClick={() => router.push("/login")}
                 className={styles.btn}
               >
                 Acessar o sistema

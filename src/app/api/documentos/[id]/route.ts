@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-import connectMongoDB from "@/app/api/conexao/utils";
+import connectMongoDB from "@/app/api/conexao/utils/utils";
 
 import Documento from "../../conexao/models/models.documentos";
 

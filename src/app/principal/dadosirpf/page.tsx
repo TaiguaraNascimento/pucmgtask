@@ -34,7 +34,7 @@ export default async function DadosIRPF() {
               <tr key={contribuinte.id}>
                 <td>
                   <OpenStage
-                    href={`/principal/dadosirpf/${contribuinte.id}`}
+                    href={`/principal/stage/${contribuinte.id}`}
                     contribuinte={contribuinte.nome}
                   />
                 </td>

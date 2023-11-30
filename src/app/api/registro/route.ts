@@ -1,6 +1,6 @@
 import Usuario from "@/app/api/conexao/models/models.usuario";
 
-import connectMongoDB from "@/app/api/conexao/utils";
+import connectMongoDB from "@/app/api/conexao/utils/utils";
 
 import argon2 from "argon2";
 import { NextResponse } from "next/server";

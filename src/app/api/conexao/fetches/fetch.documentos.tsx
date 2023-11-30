@@ -1,5 +1,5 @@
 import Documentos from "../models/models.documentos";
-import connectToDB from "../utils";
+import connectToDB from "../utils/utils";
 
 export const fetchDocumentos = async () => {
   try {

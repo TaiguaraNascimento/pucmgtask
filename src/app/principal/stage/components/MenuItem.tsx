@@ -28,14 +28,27 @@ function ImagemComponent(imagem) {
 }
 
 export default function MenuItem(props) {
-  const acao = props.acao;
+  const acao = props.onClick;
   const titulo = props.titulo;
   const imagem = props.imagem;
+
+  const anotacao = props.anotacao === true ? true : false;
 
   return (
     <div className={style.MenuItem} onClick={acao}>
       <div className={style.imagem}>{ImagemComponent(imagem)}</div>
-      <div className={style.texto}>{titulo}</div>
+      <div className={style.texto}>
+        {titulo}
+
+        {anotacao === true ? (
+          <div className={style.anotacao}>
+            {" "}
+            (não implementado neste projeto)
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
     </div>
   );
 }

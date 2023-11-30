@@ -16,8 +16,11 @@
     width: 300px;
 
     .MenuItem {
+      --space: 15px;
       display: flex;
       align-items: center;
+      margin-top: var(--space);
+      margin-bottom: var(--space);
 
       &:hover {
         text-decoration: underline;
@@ -36,4 +39,14 @@
     @include quadro();
     width: 900px;
   }
+}
+
+.anotacao {
+  font-size: 10px;
+  background-color: #fee0f8;
+  padding: 2px;
+  display: inline-block;
+  font-weight: bold;
+  color: #d81651;
+  border-radius: 5px;
 }
