@@ -25,5 +25,9 @@
 
 .NaoImplementado {
   font-size: 13px;
-  color: #acacac;
+  color: #ac056c;
+  background-color: #f372f0;
+  padding: 3px;
+  display: inline-block;
+  border-radius: 4px;
 }

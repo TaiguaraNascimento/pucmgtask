@@ -3,7 +3,7 @@
 import MenuItem from "./MenuItem";
 import style from "./components.module.css";
 
-export default function MenuLateral(prpos) {
+export default function MenuLateral(props) {
   return (
     <div className={style.MenuLateral}>
       <MenuItem titulo="Dados Pessoais" link="/principal/stage/1" imagem={1} />

@@ -38,6 +38,10 @@
   .Content {
     @include quadro();
     width: 900px;
+    height: 100%;
+
+    .row {
+    }
   }
 }
 
@@ -49,4 +53,46 @@
   font-weight: bold;
   color: #d81651;
   border-radius: 5px;
+}
+
+.Codigo {
+  height: 30px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Forms {
+  font-family: var(--fontName);
+  display: flex;
+  flex-direction: column;
+
+  .Row {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-flow: nowrap;
+    justify-content: flex-start;
+  }
+
+  .Campo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .InputBox {
+      font-family: var(--fontName);
+      font-size: 12pt;
+      border: 1px;
+      width: 180px;
+      background-color: #f5f5f5;
+      padding: 5pt;
+    }
+  }
 }

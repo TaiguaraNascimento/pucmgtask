@@ -6,7 +6,7 @@ import { FcMoneyTransfer } from "react-icons/fc";
 
 import { FcLike } from "react-icons/fc";
 
-import style from "./stage.module.css";
+import style from "./components.module.css";
 
 function ImagemComponent(imagem) {
   switch (imagem) {
@@ -28,23 +28,19 @@ function ImagemComponent(imagem) {
 }
 
 export default function MenuItem(props) {
-  const acao = props.onClick;
   const titulo = props.titulo;
   const imagem = props.imagem;
 
   const anotacao = props.anotacao === true ? true : false;
 
   return (
-    <div className={style.MenuItem} onClick={acao}>
+    <div className={style.MenuItem}>
       <div className={style.imagem}>{ImagemComponent(imagem)}</div>
       <div className={style.texto}>
         {titulo}
 
         {anotacao === true ? (
-          <div className={style.anotacao}>
-            {" "}
-            (não implementado neste projeto)
-          </div>
+          <div className={style.anotacao}>(não implementado neste projeto)</div>
         ) : (
           ""
         )}
